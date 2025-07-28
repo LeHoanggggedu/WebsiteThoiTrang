@@ -1,0 +1,11 @@
+{
+    "name": "vanng/php",
+    "autoload": {
+        "psr-4": {
+            "Vanng\\Php\\": "src/"
+        }
+    },
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.29"
+    }
+}
