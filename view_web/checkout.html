@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../assets/css/style_checkout.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dimoi Archive.</h1>
+        </header>
+        <main>
+            <div class="checkout-left">
+                <!-- Contact Section -->
+                <section class="contact">
+                    <h2>Contact</h2>
+                    <input type="email" placeholder="Email" required>
+                    <div>
+                        <input type="checkbox" id="news-offers">
+                        <label for="news-offers">Email me with news and offers</label>
+                    </div>
+                </section>
+
+                <!-- Delivery Section -->
+                <section class="delivery">
+                    <h2>Delivery</h2>
+                    <select>
+                        <option>Vietnam</option>
+                        <option>USA</option>
+                        <option>Japan</option>
+                    </select>
+                    <div class="input-row">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Apartment, suite, etc. (optional)">
+                    <div class="input-row">
+                        <input type="text" placeholder="City">
+                        <input type="text" placeholder="Postal code (optional)">
+                    </div>
+                    <input type="text" placeholder="Phone">
+                </section>
+            </div>
+
+            <div class="checkout-right">
+                <!-- Order Summary Section -->
+                <section class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="product">
+                        <p>1x ROYAL KNIGHT CLUB WAXED TRACKSUIT</p>
+                        <p>$99.00</p>
+                    </div>
+                    <div class="product">
+                        <p>1x KNIGHT CLUB LEATHER JACKET</p>
+                        <p>$149.00</p>
+                    </div>
+                    <div class="product">
+                        <p>1x GHIDORAH CHAØS LEATHER CARGO PANTS</p>
+                        <p>$278.00</p>
+                    </div>
+                    <hr>
+                    <div class="summary">
+                        <p>Subtotal</p>
+                        <p>$526.00</p>
+                    </div>
+                    <div class="summary">
+                        <p>Shipping</p>
+                        <p>FREE</p>
+                    </div>
+                    <div class="summary">
+                        <p>Estimated taxes</p>
+                        <p>$52.60</p>
+                    </div>
+                    <hr>
+                    <div class="total">
+                        <p>Total</p>
+                        <p>$578.60</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <button class="order-button">Đặt hàng</button>
+    </div>
+    <script src="../assets/js/checkout.js"></script>
+</body>
+</html>

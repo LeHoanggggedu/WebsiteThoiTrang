@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="../assets/css/style_cart.css">
+    <link rel="stylesheet" href="../assets/css/style_product.css">
+</head>
+<body>
+    <div class="headerr">
+        <iframe src="header.html" frameborder="0"></iframe>
+    </div>
+    <div class="menu">
+        <ul>
+            <li class="menu-heading">New Arrival</li>
+            <ul>
+                <li><a href="cart.html">T Shirt</a></li>
+                <li><a href="cart.html">Hoodie</a></li>
+                <li><a href="cart.html">Shirt</a></li>
+                <li><a href="cart.html">Vest</a></li>
+            </ul>
+            <li class="menu-heading">Outerwear</li>
+            <ul>
+                <li><a href="cart.html">Jackets</a></li>
+                <li><a href="cart.html">Shackets</a></li>
+                <li><a href="cart.html">Bomber</a></li>
+            </ul>
+            <li class="menu-heading">Bottoms</li>
+            <ul>
+                <li><a href="cart.html">Jeans</a></li>
+                <li><a href="cart.html">Shorts</a></li>
+                <li><a href="cart.html">Khaki Pants</a></li>
+                <li><a href="cart.html">Skirt</a></li>
+            </ul>
+        </ul>
+    </div>
+    <main>
+        <div class="toto">
+            <div class="product-page">
+                <div class="image-section">
+                    <div class="main-image">
+                        <img src="../assets/images/img2.jpg" alt="Main Product Image">
+                    </div>
+                    <div class="thumbnail-container">
+                        <div class="thumbnail">
+                            <img src="../assets/images/img2.jpg" alt="Thumbnail 1">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="../assets/images/img2.jpg" alt="Thumbnail 2">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="../assets/images/img2.jpg" alt="Thumbnail 3">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="../assets/images/img2.jpg" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <h4>Dimoi Flexinn</h4>
+                <h1>MÂFIA SWEATPANTS</h1>
+                <p class="price">$85.00 USD</p>
+              
+                <div class="size-section">
+                  <p>SIZE</p>
+                  <button class="size-btn" data-size="S">SIZE S</button>
+                  <button class="size-btn" data-size="M">SIZE M</button>
+                  <button class="size-btn" data-size="L">SIZE L</button>
+                </div>
+              
+                <div class="quantity-section">
+                  <p>Quantity</p>
+                  <div class="quantity-controls">
+                    <button class="quantity-btn" onclick="updateQuantity(-1)">-</button>
+                    <input type="number" id="quantity" value="1" min="1" class="custom-number-input" />
+                    <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
+                  </div>
+                </div>
+              
+                <div class="action-buttons">
+                  <button class="add-to-cart" onclick="addToCart()">Add to cart</button>
+                  <a href="checkout.html"> <button class="buy-now" onclick="buyNow()">Buy it now</button></a>
+                </div>
+              
+                <ul class="product-details">
+                  <li>COLOR: BLACK</li>
+                  <li>SIZE: S / M / L</li>
+                  <li>FORM: BAGGY</li>
+                  <li>WASHED</li>
+                  <li>PRINTED ON FRONT AND BACK</li>
+                  <li>SIZE CHART IN THE LAST PIC</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div class="footerr">
+        <iframe src="footer.html" frameborder="0" class="cc"></iframe>
+    </div>
+    <script src="../assets/js/product.js"></script>
+</body>
+</html>

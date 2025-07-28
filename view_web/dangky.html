@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Người Dùng</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="C:\wamp64\www\php\assets\css\style_dangky.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="headerr">
+        <iframe src="C:\wamp64\www\php\view_web\header.html" frameborder="0"></iframe>
+    </div>
+<main>
+    <div class="contai">
+        <h2 class="text-center mb-4">Đăng Ký Người Dùng</h2>
+        <form id="registrationForm" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="fullname" class="form-label">Họ và tên (*)</label>
+                <input type="text" id="fullname" class="form-control" placeholder="Nhập họ và tên" required>
+                <div class="invalid-feedback">Vui lòng nhập họ và tên.</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email (*)</label>
+                <input type="email" id="email" class="form-control" placeholder="Nhập email" required>
+                <div class="invalid-feedback">Vui lòng nhập email hợp lệ.</div>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Số điện thoại (*)</label>
+                <input type="text" id="phone" class="form-control" placeholder="Nhập số điện thoại" required>
+                <div class="invalid-feedback">Vui lòng nhập số điện thoại hợp lệ.</div>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Đặt mật khẩu (*)</label>
+                <div class="input-group">
+                    <input type="password" id="password" class="form-control" placeholder="Password" required>
+                    <button type="button" class="btn btn-outline-secondary" id="togglePassword">
+                        <i class="bi bi-eye-slash"></i>
+                    </button>
+                </div>
+                <div class="invalid-feedback">Mật khẩu của bạn đang bao gồm dấu tiếng Việt!!!</div>
+            </div>
+            
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-dark" onclick="validateForm()">Đăng Ký</button>
+            </div>
+            
+        </form>
+        <p id="result" class="mt-3"></p>
+    </div>
+</main>
+   
+
+    <!-- Link Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function validateForm() {
+    const form = document.getElementById('registrationForm');
+    if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+    }
+
+    const fullname = document.getElementById('fullname').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const password = document.getElementById('password').value.trim();
+    const resultElement = document.getElementById('result');
+
+    // Reset lỗi
+    resultElement.textContent = '';
+    resultElement.className = '';
+
+    // Kiểm tra định dạng số điện thoại
+    const phoneRegex = /^[0-9]{10,11}$/;
+    if (!phoneRegex.test(phone)) {
+        resultElement.textContent = "Số điện thoại không hợp lệ. Phải từ 10-11 chữ số!";
+        resultElement.className = 'text-danger';
+        return;
+    }
+
+   
+
+    // Kiểm tra mật khẩu chứa dấu tiếng Việt
+    const vietnameseCharRegex = /[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđ]/i;
+    if (vietnameseCharRegex.test(password)) {
+        resultElement.textContent = "Mật khẩu không được chứa dấu tiếng Việt!";
+        resultElement.className = 'text-danger';
+        return;
+    }
+
+    // Hiển thị kết quả
+    resultElement.textContent = `Đăng ký thành công! Thông tin của bạn:\n
+    Họ và tên: ${fullname}\n
+    Email: ${email}\n
+    Số điện thoại: ${phone}\n
+    `;
+    resultElement.className = 'text-success';
+}
+document.getElementById('togglePassword').addEventListener('click', function () {
+        const passwordField = document.getElementById('password');
+        const toggleIcon = this.querySelector('i');
+
+        if (passwordField.type === 'password') {
+            passwordField.type = 'text';
+            toggleIcon.classList.remove('bi-eye-slash');
+            toggleIcon.classList.add('bi-eye');
+        } else {
+            passwordField.type = 'password';
+            toggleIcon.classList.remove('bi-eye');
+            toggleIcon.classList.add('bi-eye-slash');
+        }
+    });
+    </script>
+</body>
+</html>

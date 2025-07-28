@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../assets/css/style_cartt.css">
+
+</head>
+<body>
+    <div class="headerr">
+        <iframe src="header.html" frameborder="0"></iframe>
+    </div>
+
+    <div class="cart">
+        <div class="hed">
+            <h1 class="cart-title">Your cart</h1>
+            <a href="products.html" class="continue-shopping">Continue shopping</a>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sản phẩm 1 -->
+                <tr>    
+                    <td>
+                        <div class="product">
+                            <img src="../assets/images/888.jpg" alt="T-Shirt">
+                            <div>
+                                <p class="name"><a href="/product-details.html?id=1">00 Knight Club T Shirt</a></p>
+                                <p class="price">$35.00</p>
+                                <p>SIZE: S</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="quantity">
+                            <button>-</button>
+                            <input type="number" value="1" min="1">
+                            <button>+</button>
+                            <button class="delete">&#128465;</button>
+                        </div>
+                    </td>
+                    <td class="total">$35.00</td>
+                </tr>
+                <!-- Sản phẩm 2 -->
+                <tr>
+                    <td>
+                        <div class="product">
+                            <img src="../assets/images/20240726_3fPU7tDr1k.jpeg" alt="Tracksuit">
+                            <div>
+                                <p class="name"><a href="/product-details.html?id=2">ROYAL KNIGHT CLUB WAXED TRACKSUIT</a></p>
+                                <p class="price">$99.00</p>
+                                <p>COLOR: BLACK HOODZIP</p>
+                                <p>SIZE: S</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="quantity">
+                            <button>-</button>
+                            <input type="number" value="1" min="1">
+                            <button>+</button>
+                            <button class="delete">&#128465;</button>
+                        </div>
+                    </td>
+                    <td class="total">$99.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="cart-summary">
+        <p>Subtotal: <span id="subtotal">$0.00</span></p>
+        <p>Taxes and shipping calculated at checkout</p>
+        <a href="checkout.html"><button class="checkout-btn" >Check out</button></a>
+    </div>
+    <div class="footerr">
+        <iframe src="footer.html" frameborder="0"  class="cc" ></iframe>
+    </div>
+
+    <script src="../assets/js/cacula_cart.js"></script>
+</body>
+</html>
