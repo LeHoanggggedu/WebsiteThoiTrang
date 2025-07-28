@@ -1,0 +1,140 @@
+/* Reset cơ bản */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header tổng thể */
+header {
+    background-color: white;
+    padding: 1px 0;
+    border-bottom: 1px solid white;
+}
+
+/* Container chính */
+.container {
+    max-width: 1500px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 0px 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+}
+
+/* Name brand */
+.name_brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    padding: 15px 0px;
+    margin-top: 25px;
+    margin-right: 0px;
+}
+
+/* Quote brand */
+.quote_brand {
+    font-size: 1rem;
+    font-style: italic;
+    color: #777;
+    margin-top: 42px;
+    padding: 15px 0px;
+    margin-left: 0px;
+    
+}
+
+/* Logo */
+.brand_logo img {
+    max-width: 90px;
+  
+}
+.brand_logo{
+    margin-top: 0px;
+}
+/* Menu điều hướng */
+.menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    padding: 15px 0px;
+}
+
+.menu nav ul li {
+    display: inline-block;
+}
+
+.menu nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu nav ul li a:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Container sale */
+.container_sale {
+    background-color: #000; /* Nền đen */
+    color: #fff; /* Chữ trắng */
+    text-align: center;
+    padding: 8px 0; /* Chiều cao 15px */
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.container_sale a {
+    color: #fff; /* Chữ trắng */
+    text-decoration: none;
+    margin: 0 0px;
+    padding: 2px 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* Hình chữ nhật cha */
+.wrapper {
+    width: 1188px;
+    height: 197px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #000;
+  }
+  
+  /* Thẻ cuộn chứa nội dung */
+  .scroll {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: scroll-animation 10s linear infinite;
+  }
+  
+  /* Phần tử con */
+  .content {
+    width: 1105px;
+    height: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 42px;
+    background: lightblue;
+    border: 1px solid #000;
+  }
+  
+  /* Animation vòng tròn */
+  @keyframes scroll-animation {
+    0% {
+      transform: translateX(0); /* Bắt đầu từ vị trí ban đầu */
+    }
+    100% {
+      transform: translateX(-calc(1105px + 42px) * 3); /* Dịch chuyển toàn bộ nội dung */
+    }
+  }
+  

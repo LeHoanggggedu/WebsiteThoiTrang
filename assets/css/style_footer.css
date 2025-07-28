@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+   font-family: Arial, sans-serif;
+   width: 100%; 
+   overflow-x: hidden; 
+   height: auto;
+    
+}
+/*footer tổng thể*/
+footer
+{
+    width: 100%;
+    height: 700px;
+    background-color: black;
+    padding: 1px 0;
+    border-top: 1px solid navy;
+}
+/* container chính */
+.container
+{
+margin-top: 400px;
+padding: 0px 1px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+row-gap: 15px;
+align-items: center;
+}
+.ftimfomation-title{
+    text-align: left;
+    font-size: 20px;
+    margin: 16px 0px 4px 0px;
+    
+}
+.flat-is{
+    margin: 4px 0px 16px 0px;
+}
+.loca{
+    padding: 10px 50px;
+    border-left: 1px solid rgba(255, 255, 255, 0.8); /* Hiệu ứng phát sáng */ ;
+    
+}
+.shipping{
+    padding: 10px 50px;
+    border-left: 1px solid rgba(255, 255, 255, 0.8); /* Hiệu ứng phát sáng */ ;
+}
+i {
+    color: white;
+}
+
+p {
+    color: white;
+}
+img{
+    margin-right: 10px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.ftname{
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.container2 { 
+   margin-top: 40px;
+
+    padding: 20px 1px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+select {
+    width: 120px;
+    padding: 5px;
+    font-size: 16px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.quocgia {
+    border: 1px solid white;
+    width: 150px;
+    height: 20px;
+    padding: 14px 48px;
+    margin: 0 50px;
+    display: flex;
+    justify-content: center; /* Căn giữa thẻ */
+    align-items: center;
+    border-radius: 10px;
+}
+.payment-icon i {
+    font-size: 24px;
+     /* Tăng kích thước icon */
+}
+
+.payment-icon {
+    display: flex;
+    justify-content: space-between; /* Giữ thẻ payment-icon ở góc phải */
+    flex-wrap: wrap;
+    row-gap: 15px;
+    align-items: center;
+    width: 150px;
+    height: 20px;
+    margin: 0 50px;
+    padding: 14px 10px;
+    gap: 8px;
+    width: 280px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+.scrolling-wraper{
+    width: 100%;
+    height: 300px;
+    padding: 50px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+relative{
+    width: 100%;
+    border-bottom:1px solid rgba(255, 255, 255, 0.8); ;
+}
+.wrapper-truoc{
+   
+    width: 110%;
+    rotate: -2deg;
+    height: 180px;
+    position: absolute;
+    inset-block-start: 11;
+    inset-inline-start: -5%;
+    z-index: 2;
+    
+    
+    
+   
+}
+.wrapper-sau{
+    width: 110%;
+    rotate: 4deg;
+    height: 180px;
+    position: absolute;
+    inset-block-start: 3;
+    inset-inline-start:3%;
+    z-index: -1;
+    inset-block-start: 150px;
+  
+    
+    
+}
+
+.centermarque{
+    width: 100%;
+    height: 150px;
+    margin: 30px 0px;
+    white-space: nowrap;
+    background-color: white;
+    align-items: center;
+    padding-top: 20px;
+
+}
+.centermarquee
+{  width: 100%;
+    height: 140px;
+    margin: 30px 0px;
+    white-space: nowrap;
+    background-color: white;}
+.centermarquee::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ màu đen trong suốt */
+    z-index: 1; /* Đảm bảo lớp phủ nằm trên background */
+}
+
+.marquee-item {
+    flex: none;
+    padding: 0 10px;}
+.marqueimg{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+strong{
+    font-size: 18px ;
+}
+.marqueimg1 img{
+    rotate: -3deg;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+.marqueimgg img{
+    rotate: 3deg;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.marquepspace1 {
+    display: flex;  
+    justify-content: space-between; 
+    /* Adjust the gap value as needed */
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    align-items: center;
+    
+     
+} 
+.marqueimg1,.marqueimgg, .marquepspace1 > div {
+     display: inline-block; margin-right: 400px; /* Khoảng cách giữa các mục */ 
+    }

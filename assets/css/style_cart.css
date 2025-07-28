@@ -1,0 +1,158 @@
+@import url('https://fonts.cdnfonts.com/css/ica-rubrik-black');
+@import url('https://fonts.cdnfonts.com/css/poppins');
+body{
+    margin: 0;
+   font-family: Arial, sans-serif;
+   width: 100%; overflow-x: hidden;
+   /*background-color: black;*/
+   
+    
+}
+.headerr{
+    width: 100%;
+    height: auto;
+  
+}
+iframe{width: 100%;
+    height: auto;
+}
+.menu {
+    padding: 20px;
+    width: 300px;
+    position: fixed;
+    
+    
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+    font-size: 14px;
+    
+}
+
+.menu li:hover  {
+  
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+   
+
+}
+
+.menu .menu-heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.product-grid{
+    padding-left: 25%;
+    padding-top: 12rem;
+    padding-right: 5.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cố định 4 cột */
+    gap: 40px;
+   
+  
+}
+.product-card{
+    width: 80%;
+    height: auto;
+    margin-bottom: 6rem;
+    padding:0% 4% ;
+    display: flex; /* Kích hoạt Flexbox */
+    flex-direction: column; /* Bố cục theo chiều dọc */
+    justify-content: center; /* Căn giữa theo trục dọc */
+    align-items: center;
+    
+}
+.product-grid > *:nth-child(3n) {
+    margin-right: 0;
+}
+.productimg {
+    position: relative; /* Đặt tương đối để chứa ảnh tuyệt đối bên trong */
+    overflow: hidden; /* Ẩn phần ảnh thừa nếu có */
+}
+
+.productimg img {
+    display: block;
+    width: 100%; /* Đảm bảo ảnh đầy đủ kích thước khung */
+    height: auto;
+    transition: opacity 0.8s ease; /* Hiệu ứng chuyển đổi mượt mà */
+    border-radius: 10px; /* Bo tròn góc */
+}
+
+.productimg .default-img {
+    position: relative; /* Ảnh mặc định hiển thị bình thường */
+    z-index: 1;
+}
+
+.productimg .hover-img {
+    position: absolute; /* Ảnh thứ 2 nằm chồng lên ảnh thứ 1 */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Ẩn ảnh thứ 2 mặc định */
+    z-index: 2;
+}
+
+.productimg:hover .default-img {
+    opacity: 0; /* Khi hover, ẩn ảnh thứ 1 */
+}
+
+.productimg:hover .hover-img {
+    opacity: 1; /* Khi hover, hiện ảnh thứ 2 */
+}
+.productimg a {
+    text-decoration: none; /* Xóa gạch chân trong link */
+}
+.textt{
+    
+    font-family: Poppins;
+    text-align: center;
+}
+.textt a{
+    text-decoration: none;
+    color: #000;
+    
+
+}
+
+h2 {
+    font-size: 1.2rem;
+    transition: font-size 0.3s ease; /* Tạo hiệu ứng mượt mà khi thay đổi kích thước */
+}
+
+h2:hover {
+    font-size: 1.5rem; /* Kích thước phóng to khi hover */
+}
+.footerr{
+    width: 100%;
+    height: 670px ; /* Điều chỉnh chiều cao tự động theo nội dung */
+
+    background-color: black;
+
+    
+}
+
+iframe{
+    width: 100%;
+    height: auto;
+}
+.cc{
+    overflow: hidden;
+    height: 720px;
+    background-color: black;
+}

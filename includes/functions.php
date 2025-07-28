@@ -1,0 +1,1 @@
+# các hàm php dùng chung
